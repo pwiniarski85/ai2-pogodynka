@@ -19,8 +19,11 @@ security:
             form_login:
                 login_path: app_login
                 check_path: app_login
+                default_target_path: http://pogodynka.localhost:51639/location
+
             logout:
                 path: app_logout
+                target: http://pogodynka.localhost:51639/login
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
@@ -54,6 +57,7 @@ security:
             - ROLE_LOCATION_INDEX
             - ROLE_MEASUREMENT_INDEX
             - ROLE_LOCATION_EDIT
+            - ROLE_LOCATION_SHOW
 
 when@test:
     security:

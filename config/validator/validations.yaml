@@ -31,7 +31,7 @@ App\Entity\Measurement:
           groups: [ new, edit ]
     date:
       - Type:
-          type: DATE
+          type: datetime
           message: 'The value {{ value }} is not a valid {{ type }}.'
           groups: [ new, edit ]
       - NotNull:

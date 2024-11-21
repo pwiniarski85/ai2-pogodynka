@@ -17,7 +17,7 @@ class LocationType extends AbstractType
             ->add('country', ChoiceType::class, [
                 'choices' => [
                     'Poland' => 'PL',
-                    'Germany' => 'GR',
+                    'Germany' => 'DE',
                     'France' => 'FR',
                     'Spain' => 'ES',
                     'Italy' => 'IT',
