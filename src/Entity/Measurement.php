@@ -69,4 +69,9 @@ class Measurement
     {
         return $this->date->format('Y-m-d') . ' ' . $this->celsius . '°C';
     }
+
+    public function getFahrenheit(): ?float
+    {
+        return $this->celsius * 9 / 5 + 32;
+    }
 }
